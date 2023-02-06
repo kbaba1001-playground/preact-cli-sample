@@ -8,9 +8,9 @@
     "pnpm": "^7.26.1"
   },
   "scripts": {
-    "build": "preact build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider preact build",
     "serve": "sirv build --cors --single",
-    "dev": "preact watch",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider preact watch",
     "lint": "eslint src",
     "test": "jest"
   },
